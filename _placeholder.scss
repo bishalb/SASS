@@ -1,0 +1,50 @@
+* {
+  box-sizing:border-box;
+}
+body {
+  background:#eee;
+}
+
+
+fieldset {
+  
+  position:relative;
+  font-family:'Slate Pro Medium';
+}
+
+input, textarea {
+  padding:1em 1em .8em 1em;
+  font-size:1.2em;
+}
+input:focus,textarea:focus {
+  outline:none;
+  background:#fbfbe9;
+}
+
+input + label, textarea + label {
+  display:block;
+  cursor:text;
+  color:$lblue;
+  transition:.15s ease-out all;
+  position:absolute;
+  top:1.8em;
+  left:2.3em;
+}
+
+input:focus + label, textarea:focus + label,
+label.stay {
+  top:1em;
+  left:3em;
+  font-size:.7em;
+  font-weight:bold;
+  color:#139dd7;
+  transition:.15s ease-out all;
+}
+
+.field{
+    width: 100%;
+  float: left;
+  position: relative;
+}
+
+
